@@ -32,9 +32,12 @@ public class ApplesOranges {
                 }
             }
         }
+        
+        // Special offer modification
+
         System.out.format("Total cost of %d apple%s and %d orange%s is £%.2f\n",
                 nApples, (nApples == 1 ? "" : "s"),
                 nOranges, (nOranges == 1 ? "" : "s"),
-                (nApples * applePrice + nOranges * orangePrice)/100.0);
+                ((nApples - nApples / 2) * applePrice + (nOranges - nOranges / 3) * orangePrice)/100.0);
     }
 }
